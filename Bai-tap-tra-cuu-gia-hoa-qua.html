@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa Qua</title>
+
+</head>
+<body text="#8a2be2" bgcolor="#ffc0cb">
+<H1> Gia Hoa Qua</H1>
+Nhap vao loai hoa qua<input type="text" id="thang"/>
+<button onclick="tinh()">Xem</button> <br/>
+Ket qua: <span id="hienthi"></span>
+<script>
+    function tinh() {
+        let thang1 = document.getElementById("thang").value
+        switch (thang1) {
+            case "Ổi":
+            case "Dưa Hấu":
+                document.getElementById("hienthi").innerHTML="20000 VNĐ/kg"
+                break
+            case "Táo":
+            case "Xoài":
+                document.getElementById("hienthi").innerHTML="30000 VNĐ/kg"
+                break
+            case "Cam":
+                document.getElementById("hienthi").innerHTML="40000 VNĐ/kg"
+                break
+            case "Chôm Chôm":
+                document.getElementById("hienthi").innerHTML="50000 VNĐ/kg"
+                break
+            case "Măng Cụt":
+                document.getElementById("hienthi").innerHTML=""
+                break
+            default:
+                document.getElementById("hienthi").innerHTML="Khong co loai qua nay"
+
+
+        }
+    }
+</script>
+</body>
+</html>
